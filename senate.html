@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./assets/logoinsightg - copia.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <title>Senate</title>
+</head>
+<body>
+  <header>
+    <div class="navbar navbar-light bg-light">
+      <div class="container-fluid d-flex align-items-center justify-content-between pe-3 ps-3 ">
+        <div class="d-flex align-items-center">
+          <img src="./assets/logo-data-ig.png" alt="Logo" class="logo me-2" width="250" height="130">
+          <h1 class="pt-2">Data Insight Group</h1>
+        </div>
+        <h4><a href="#" class="no-decoration color-main"><i class="bi bi-envelope"></i> info@datainsightgroup.net</a>
+        </h4>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index-homepage.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Congress 113
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./house.html">House</a></li>
+                <li><a class="dropdown-item" href="./senate.html">Senate</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Attendance
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./attendance-house.html">House</a></li>
+                <li><a class="dropdown-item" href="./attendance-senate.html">Senate</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Party Loyalty
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./loyalty-house.html">House</a></li>
+                <li><a class="dropdown-item" href="./loyalty-senate.html">Senate</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="d-flex mt-3">
+  <div class="container-fluid col-8 p-3">
+  <h2> Senators </h2>
+    <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+    
+  </div>
+  </main>
+  <form > 
+    <div class="container-fluid col-8 p-3">
+      <label for="estados" class="fs-5"> State</label>
+      <select id="select" class="p-2 text-center text danger">
+        <option selected>Select</option>
+      </select>
+    </div>
+    <div class="container-fluid col-8 p-3">
+      <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="R" value="R" checked>
+              <label class="form-check-label" for="R">Republican</label>
+          </div>
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="D" value="D" checked>
+              <label class="form-check-label" for="D">Democrat</label>
+          </div>
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="ID" value="ID" checked>
+              <label class="form-check-label" for="ID">Independent Democrat</label>
+          </div>
+    </div>
+  </form>
+    <div class="container">
+      <table id="table" class="table">
+        <caption> Congressmen </caption>
+        <thead>
+          <tr>
+            <th scope="col"> FULL NAME </th>
+            <th scope="col"> PARTY </th>
+            <th scope="col"> STATE </th>
+            <th scope="col"> YEARS IN OFFICE </th>
+            <th scope="col"> &percnt; of Votes with Party </th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    <footer class="mb-4">
+      <div class="container-fluid">
+          <div class="navbar-brand bg-light border border-1 border-dark">
+              <div class="container align-items-center justify-content-center pt-2">
+                  <p class="text-center">&copy; 2021 Data Insight Group | All rights reserved</p>
+              </div>
+          </div>
+      </div>
+      </div>
+    </footer>
+<script src="./javascript/javascript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
